@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            border-style: solid;
+            border-width: 0.1px;
+        }
+        .time{
+            width : 30%;
+            display:inline-block;
+            color:#E6E9ED;
+        }
+        .nickname{
+            width : 30%;
+            display:inline-block;
+            color:#5E82D6;
+        }
+        .hit{
+            float: right;
+            background:#5E82D6;
+            display:inline-block;
+            border-radius:4px;
+            padding:2px;
+            color:white;
+        }
+        .link{
+        }
+        body{
+            background:whit;
+        }
+        .top{
+            width:100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="top">
+        {%for i in data%}
+            <div class="link" onclick="location.href='{{i.link}}'">
+                <div class="title">{{i.title}}</div>
+                <div class="horizontal">
+                    <div class="time">{{i.time}}</div>
+                    <div class="nickname">{{i.nickname}}</div>
+                    <div class="hit">{{i.hit}}</div>
+                </div>
+            </div>
+            <hr>
+        {%endfor%}
+
+    </div>
+</body>
+</html>
