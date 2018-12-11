@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'miniweb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-'''
+
 DATABASES = {
    'default': {
        'NAME': 'tiqmfk950$miniweb',
@@ -102,7 +102,7 @@ DATABASES = {
              'PORT': '3306', # 데이터베이스 포트(보통은 3306)
          }
 }
-
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
