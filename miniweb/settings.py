@@ -29,7 +29,7 @@ DEBUG = True
 
 #ALLOWED_HOSTS = ['192.168.0.20','127.0.0.1', '.pythonanywhere.com']
 
-ALLOWED_HOSTS = ['.pythonanywhere.com']
+ALLOWED_HOSTS = ['.pythonanywhere.com','127.0.0.1']
 
 CRONJOBS = [
     ('* * * * *', 'app.cron.my_cron_job')
@@ -84,6 +84,7 @@ WSGI_APPLICATION = 'miniweb.wsgi.application'
 
 DATABASES = {
    'default': {
+       'ENGINE': 'django.db.backends.mysql',
        'NAME': 'tiqmfk950$miniweb',
        'USER': 'tiqmfk950',
        'PASSWORD': 'qjtmxjtlfqj!2',

@@ -116,3 +116,6 @@ def my_cron_job():
 #    engine = create_engine("mysql+mysqldb://root:" + "qjtmxjtlfqj!2" + "@localhost/miniweb", encoding='utf-8')
 #    conn = engine.connect()
 #    data_hit.to_sql(name='app_clien', con=engine, if_exists='replace')
+
+if __name__ == '__main__':
+    my_cron_job()
