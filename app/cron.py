@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from urllib import request as req
 import datetime
 import pandas as pd
-from app.models import Clien
+#from app.models import Clien
 import pymysql
 from sqlalchemy import create_engine
 pymysql.install_as_MySQLdb()
@@ -109,8 +109,8 @@ def my_cron_job():
     del data_hit['index']
     data_hit.index.name='id'
     Clien.objects.all().delete()
-    for v in data_hit.get_values():
-        Clien.objects.create(title=v[0],nickname=v[1],hit=v[2],time=v[3],link=v[4])
+#    for v in data_hit.get_values():
+#        Clien.objects.create(title=v[0],nickname=v[1],hit=v[2],time=v[3],link=v[4])
     pymysql.install_as_MySQLdb()
     engine = create_engine("mysql+mysqldb://user:" + "qjtmxjtlfqj!2" + "@tiqmfk950.mysql.pythonanywhere-services.com", encoding='utf-8')
     conn = engine.connect()
