@@ -38,6 +38,7 @@ CRONJOBS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'django_crontab',
     'app',
     'django.contrib.admin',
     'django.contrib.auth',
