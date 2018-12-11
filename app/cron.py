@@ -108,7 +108,7 @@ def my_cron_job():
     data_hit = data[data['hit'] > jk].sort_values(["hit"], ascending=[False]).reset_index()
     del data_hit['index']
     data_hit.index.name='id'
-    Clien.objects.all().delete()
+#    Clien.objects.all().delete()
 #    for v in data_hit.get_values():
 #        Clien.objects.create(title=v[0],nickname=v[1],hit=v[2],time=v[3],link=v[4])
     pymysql.install_as_MySQLdb()
