@@ -29,7 +29,7 @@ DEBUG = True
 
 #ALLOWED_HOSTS = ['192.168.0.20','127.0.0.1', '.pythonanywhere.com']
 
-ALLOWED_HOSTS = ['.pythonanywhere.com','127.0.0.1']
+ALLOWED_HOSTS = ['.pythonanywhere.com']
 
 CRONJOBS = [
     ('* * * * *', 'app.cron.my_cron_job')
